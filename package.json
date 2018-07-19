@@ -1,0 +1,45 @@
+{
+  "name": "babes",
+  "version": "1.0.0",
+  "description": "A Node micro-service for easily transpiling JavaScript with Babel.",
+  "main": "app.js",
+  "scripts": {
+    "test": "babel-node test",
+    "start": "micro ./server",
+    "start-dev": "micro-dev ./server"
+  },
+  "author": "Clinton Baker",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "^2.5.7",
+    "micro": "^9.3.2",
+    "micro-post": "^1.0.0",
+    "node-fetch": "^2.1.2",
+    "nodemon": "^1.18.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.0.0-beta.46",
+    "@babel/core": "7.0.0-beta.46",
+    "@babel/node": "7.0.0-beta.46",
+    "@babel/plugin-proposal-class-properties": "7.0.0-beta.46",
+    "@babel/plugin-proposal-optional-chaining": "7.0.0-beta.46",
+    "@babel/preset-env": "7.0.0-beta.46",
+    "@babel/preset-react": "7.0.0-beta.46",
+    "@babel/preset-stage-0": "7.0.0-beta.46",
+    "@babel/register": "7.0.0-beta.46",
+    "@babel/runtime": "7.0.0-beta.46",
+    "micro-dev": "3.0.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "target": {
+            "node": 10
+          }
+        }
+      ]
+    ]
+  }
+}
