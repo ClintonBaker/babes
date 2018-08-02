@@ -1,4 +1,4 @@
-# babes
+# babes ('BAB-uhs')
 
 <h4>A simple Node micro-service for easily transpiling JavaScript with Babel.</h4>
 
@@ -16,9 +16,9 @@ Install the module with: `npm install babes` or `yarn add babes`.
 ### With Default Configuration
 
 ```javascript
-import MODULE_NAME from 'babes';
+import MODULE_NAME from "babes";
 
-const babelify = MODULE_NAME('// some javascript in a string');
+const babelify = MODULE_NAME("// some javascript in a string");
 
 babelify.then(code => {
   // now you have transpiled code
